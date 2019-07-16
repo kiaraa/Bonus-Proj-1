@@ -7,25 +7,49 @@ public class BonusProj1 {
 		boolean keepGoing = true;
 		
 		do {
-			char letterGrade;
+			String letterGrade;
 			System.out.println("Please enter your grade.");
 			int grade = scan.nextInt();
 			scan.nextLine();
 			
-			if (grade <= 100 && grade > 87) {
-				letterGrade = 'A';
+			if (grade <= 100 && grade > 98) {
+				letterGrade = "A+";
 			}
-			else if (grade <= 87 && grade > 79) {
-				letterGrade = 'B';
+			else if (grade <= 98 && grade > 92) {
+				letterGrade = "A";
 			}
-			else if (grade <= 80 && grade > 66) {
-				letterGrade = 'C';
+			else if (grade <= 92 && grade > 89) {
+				letterGrade = "A-";
 			}
-			else if (grade <= 66 && grade > 60) {
-				letterGrade = 'D';
+			else if (grade <= 89 && grade > 86) {
+				letterGrade = "B+";
+			}
+			else if (grade <= 86 && grade > 83) {
+				letterGrade = "B";
+			}
+			else if (grade <= 83 && grade > 79) {
+				letterGrade = "B-";
+			}
+			else if (grade <= 79 && grade > 76) {
+				letterGrade = "C+";
+			}
+			else if (grade <= 76 && grade > 73) {
+				letterGrade = "C";
+			}
+			else if (grade <= 73 && grade > 66) {
+				letterGrade = "C-";
+			}
+			else if (grade <= 66 && grade > 64) {
+				letterGrade = "D+";
+			}
+			else if (grade <= 64 && grade > 62) {
+				letterGrade = "D";
+			}
+			else if (grade <= 62 && grade > 60) {
+				letterGrade = "D-";
 			}
 			else if (grade <= 60 && grade > -1) {
-				letterGrade = 'F';
+				letterGrade = "F";
 			}
 			else {
 				System.out.println("Please enter an integer between 0 and 100.");
